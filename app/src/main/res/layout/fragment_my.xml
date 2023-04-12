@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/decimal_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="60dp"
+        android:text="Decimal number:" />
+
+    <Spinner
+        android:id="@+id/decimal_spinner"
+        android:layout_width="301dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/decimal_label"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="18dp"
+        android:entries="@array/decimal_numbers" />
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/decimal_spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="83dp"
+        android:text="Convert to binary" />
+
+    <TextView
+        android:id="@+id/binary_result"
+        android:layout_width="282dp"
+        android:layout_height="71dp"
+        android:layout_below="@+id/convert_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="77dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+</RelativeLayout>

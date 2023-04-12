@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/firstNumberSpinner"
+        android:layout_width="120dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:entries="@array/numbers_array"/>
+
+    <Spinner
+        android:id="@+id/secondNumberSpinner"
+        android:layout_width="120dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:entries="@array/numbers_array" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstNumberSpinner"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="289dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="157dp"
+        android:onClick="onAddClick"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/subtractButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstNumberSpinner"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="289dp"
+        android:layout_marginLeft="198dp"
+        android:layout_marginTop="211dp"
+        android:layout_toRightOf="@+id/addButton"
+        android:onClick="onSubtractClick"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/multiplyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstNumberSpinner"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="-369dp"
+        android:layout_marginTop="158dp"
+        android:layout_toRightOf="@+id/subtractButton"
+        android:onClick="onMultiplyClick"
+        android:text="*" />
+
+    <Button
+        android:id="@+id/divideButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstNumberSpinner"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="-84dp"
+        android:layout_marginTop="213dp"
+        android:layout_toRightOf="@+id/multiplyButton"
+        android:onClick="onDivideClick"
+        android:text="/" />
+
+    <Button
+        android:id="@+id/modButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstNumberSpinner"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="159dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="347dp"
+        android:layout_toRightOf="@+id/divideButton"
+        android:onClick="onModClick"
+        android:text="%" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="99dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="538dp"
+        android:text="TextView" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
